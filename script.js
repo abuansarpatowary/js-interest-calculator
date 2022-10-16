@@ -34,7 +34,7 @@ rangeInputs.forEach(rangeInput => {
 })
   document.querySelector('.input-box-wrapper .interest-rate-value').innerText = interestValue.value;
 const calculateInterest = () => {
-  totalAmountCalculate = (amount.value*yearValue.value*interestValue.value)/100;
+  totalAmountCalculate = (amount.value*numberOfYear.value*interestValue.value)/100;
   document.querySelector('.total-interest span').innerText = totalAmountCalculate;
   console.log(totalAmountCalculate);
 }
